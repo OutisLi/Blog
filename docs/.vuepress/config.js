@@ -1,7 +1,7 @@
 module.exports = {
+  base: "/Blog/",
+  title: 'Hello World --from OutisLi',
   themeConfig: {
-    base: "/Blog/",
-    title: 'Hello World --from OutisLi',
     logo: '/assets/img/good.png',
     nav: [
       { text: 'Home', link: '/' },
