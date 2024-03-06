@@ -11,7 +11,12 @@
   "author": "Outis",
   "license": "Apache-2.0",
   "devDependencies": {
+    "katex": "^0.16.9",
     "vuepress": "^1.9.10",
-    "vuepress-plugin-auto-sidebar": "^2.3.2"
+    "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-mathjax": "^1.2.8"
+  },
+  "dependencies": {
+    "@mdit/plugin-katex": "^0.8.0"
   }
 }

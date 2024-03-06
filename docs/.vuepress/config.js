@@ -1,6 +1,6 @@
 module.exports = {
-  base: "/Blog/",
   title: 'Hello World --from OutisLi',
+  base: "/Blog/",
   themeConfig: {
     logo: '/assets/img/good.png',
     nav: [
@@ -43,6 +43,7 @@ module.exports = {
     activeHeaderLinks: true,
   },
   plugins: {
-    "vuepress-plugin-auto-sidebar": {}
+    "vuepress-plugin-auto-sidebar": {},
+    'vuepress-plugin-mathjax': {}
   }
 }
