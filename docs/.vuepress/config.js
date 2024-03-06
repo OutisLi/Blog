@@ -1,20 +1,10 @@
 module.exports = {
   themeConfig: {
+    base: "/Blog/",
+    title: 'Hello World --from OutisLi',
     logo: '/assets/img/good.png',
     nav: [
       { text: 'Home', link: '/' },
-      // {
-      //   text: 'Research',
-      //   items: [
-      //     {
-      //       text: 'Geant4', link: '/Research/ResearchSub/2023-Geant4'
-      //     },
-      //     {
-      //       text: 'Pytorch', items: [{ text: 'xxx', link: '/language/chinese/' },
-      //       { text: 'xxx', link: '/language/japanese/' }]
-      //     },
-      //   ]
-      // },
       {
         text: 'LeetCode',
         items: [
