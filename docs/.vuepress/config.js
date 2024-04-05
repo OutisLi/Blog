@@ -1,8 +1,9 @@
 module.exports = {
-  title: 'Personal Blog --from OutisLi',
+  title: 'Personal Blog --from Outis Li',
   base: "/Blog/",
   themeConfig: {
     logo: '/assets/img/good.png',
+    sidebarDepth: 2,
     nav: [
       { text: 'Home', link: '/' },
       {
@@ -12,7 +13,7 @@ module.exports = {
             text: 'Geant4', link: '/Research/Research/2023-Geant4.md'
           },
           {
-            text: 'tbc', items: [{ text: 'tbc', link: '/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.md' },
+            text: 'CS', items: [{ text: 'Docker', link: '/Research/Research/2023.12.12-Docker.md' },
             { text: 'tbc', link: '/Chip/Chip/2.%202024.02.21-Chisel.md' }]
           },
           {
@@ -23,9 +24,17 @@ module.exports = {
       },
       {
         text: 'LeetCode',
-        items: [{ text: 'BFS', link: '/LeetCode/Leetcode/2024.02.22-BFS.md' },
-        { text: '二叉树', link: '/LeetCode/Leetcode/2024.03.05-二叉树.md' },
-        { text: '滑动窗口', link: '/LeetCode/Leetcode/2024.03.10-滑动窗口.md' }]
+        items: [{
+          text: 'Basic', items: [{ text: 'BFS', link: '/LeetCode/Leetcode/2024.02.22-BFS.md' },
+          { text: '二叉树', link: '/LeetCode/Leetcode/2024.03.05-二叉树.md' },
+          { text: '二分搜索', link: '/LeetCode/Leetcode/2024.03.11-二分搜索.md' },
+          { text: '滑动窗口', link: '/LeetCode/Leetcode/2024.03.18-滑动窗口.md' }]
+        },
+        {
+          text: 'tbc', items: [{ text: 'tbc', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' },
+          { text: 'tbc', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' }]
+        },
+        ]
       },
       {
         text: 'Chip',
@@ -40,8 +49,8 @@ module.exports = {
             { text: 'Bootcamp', link: '/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.md' }]
           },
           {
-            text: 'Verilog', items: [{ text: 'Basic', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' },
-            { text: 'Outline', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' }]
+            text: 'Verilog', items: [{ text: 'Outline', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' },
+            { text: 'Basic', link: '/Chip/Chip/3.%202023.11.07-Verilog语法.md' }]
           },
         ]
       },
@@ -65,12 +74,19 @@ module.exports = {
       },
       { text: 'External', link: 'https://google.com' },
     ],
-    sidebarDepth: 2,
     displayAllHeaders: false,
     activeHeaderLinks: true,
   },
   plugins: {
-    "vuepress-plugin-auto-sidebar": {},
-    'vuepress-plugin-mathjax': {}
-  }
+    "vuepress-plugin-auto-sidebar": {
+      title: {
+        // 更多选项: 
+        // `default`、`lowercase`、`uppercase`、`capitalize`、`camelcase`、`kebabcase`、`titlecase`
+        mode: "titlecase"
+      },
+      sidebarDepth: 2,
+    },
+    'vuepress-plugin-mathjax': {},
+    'plugin-copy-code': {}
+  },
 }

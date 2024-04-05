@@ -1,16 +1,16 @@
 ---
 home: true
-# heroImage: /hero.png
+# heroImage: https://vuejs.org/images/logo.png
 heroText: Outis Li
 tagline: Personal Blog
 actionText: 预览 →
 actionLink: /Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.md
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
+- title: Research
+  details: 用于记录科研中一些注意事项，小工具等等杂乱的东西
+- title: LeetCode
+  details: 闲暇时分学习算法的一些记录，以及一些题解
+- title: Chip
+  details: 记录自学芯片设计的过程
 footer: Licensed under Apache 2.0  | Copyright © 2023-Present Outis Li
 ---

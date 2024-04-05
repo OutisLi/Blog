@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
-    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs",
     "deploy": "bash deploy.sh"
   },
   "repository": "git@github.com:OutisLi/Blog.git",
   "author": "Outis",
   "license": "Apache-2.0",
   "devDependencies": {
-    "katex": "^0.16.9",
+    "@vuepress/plugin-copy-code": "^2.0.0-rc.18",
+    "katex": "^0.16.10",
     "vuepress": "^1.9.10",
     "vuepress-plugin-auto-sidebar": "^2.3.2",
+    "vuepress-plugin-copy-code": "^0.0.1",
     "vuepress-plugin-mathjax": "^1.2.8"
   },
   "dependencies": {
