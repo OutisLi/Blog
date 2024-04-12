@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2024.02.23-2.1 First Chisel Module | Personal Blog --from Outis Li</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/Blog/assets/css/0.styles.9501ef99.css" as="style"><link rel="preload" href="/Blog/assets/js/app.fffc62c2.js" as="script"><link rel="preload" href="/Blog/assets/js/2.d9b38520.js" as="script"><link rel="preload" href="/Blog/assets/js/1.a4e52cf6.js" as="script"><link rel="preload" href="/Blog/assets/js/60.7299e19c.js" as="script"><link rel="prefetch" href="/Blog/assets/js/10.c8b6361b.js"><link rel="prefetch" href="/Blog/assets/js/100.31d8a184.js"><link rel="prefetch" href="/Blog/assets/js/101.43f73921.js"><link rel="prefetch" href="/Blog/assets/js/102.5ed282f0.js"><link rel="prefetch" href="/Blog/assets/js/103.38126020.js"><link rel="prefetch" href="/Blog/assets/js/104.18a97c2e.js"><link rel="prefetch" href="/Blog/assets/js/105.0e28206e.js"><link rel="prefetch" href="/Blog/assets/js/106.72dc4a51.js"><link rel="prefetch" href="/Blog/assets/js/107.4f8bc33d.js"><link rel="prefetch" href="/Blog/assets/js/108.9a2b3df8.js"><link rel="prefetch" href="/Blog/assets/js/109.acce4c89.js"><link rel="prefetch" href="/Blog/assets/js/11.1a662648.js"><link rel="prefetch" href="/Blog/assets/js/110.9c843418.js"><link rel="prefetch" href="/Blog/assets/js/111.5588d5e5.js"><link rel="prefetch" href="/Blog/assets/js/112.e2a0c013.js"><link rel="prefetch" href="/Blog/assets/js/113.1d702661.js"><link rel="prefetch" href="/Blog/assets/js/114.ea11a3c7.js"><link rel="prefetch" href="/Blog/assets/js/115.07cb358a.js"><link rel="prefetch" href="/Blog/assets/js/12.eccfbbbe.js"><link rel="prefetch" href="/Blog/assets/js/13.931bd67a.js"><link rel="prefetch" href="/Blog/assets/js/14.2bf74249.js"><link rel="prefetch" href="/Blog/assets/js/15.339e7fa7.js"><link rel="prefetch" href="/Blog/assets/js/16.198e4ae3.js"><link rel="prefetch" href="/Blog/assets/js/17.8071f72f.js"><link rel="prefetch" href="/Blog/assets/js/18.3d9ea382.js"><link rel="prefetch" href="/Blog/assets/js/19.831e14a0.js"><link rel="prefetch" href="/Blog/assets/js/20.9b49ec2d.js"><link rel="prefetch" href="/Blog/assets/js/21.1ec03a46.js"><link rel="prefetch" href="/Blog/assets/js/22.a17f69b5.js"><link rel="prefetch" href="/Blog/assets/js/23.883f4d72.js"><link rel="prefetch" href="/Blog/assets/js/24.288d26b1.js"><link rel="prefetch" href="/Blog/assets/js/25.8382691f.js"><link rel="prefetch" href="/Blog/assets/js/26.b16a0955.js"><link rel="prefetch" href="/Blog/assets/js/27.48df2183.js"><link rel="prefetch" href="/Blog/assets/js/28.78a93a22.js"><link rel="prefetch" href="/Blog/assets/js/29.35173b18.js"><link rel="prefetch" href="/Blog/assets/js/3.2e411533.js"><link rel="prefetch" href="/Blog/assets/js/30.399eb7e0.js"><link rel="prefetch" href="/Blog/assets/js/31.b3883f92.js"><link rel="prefetch" href="/Blog/assets/js/32.41cbba68.js"><link rel="prefetch" href="/Blog/assets/js/33.8c7dad02.js"><link rel="prefetch" href="/Blog/assets/js/34.14dbba3c.js"><link rel="prefetch" href="/Blog/assets/js/35.4f3f9027.js"><link rel="prefetch" href="/Blog/assets/js/36.fb0febbe.js"><link rel="prefetch" href="/Blog/assets/js/37.4389234d.js"><link rel="prefetch" href="/Blog/assets/js/38.8ed5cb63.js"><link rel="prefetch" href="/Blog/assets/js/39.737bc7aa.js"><link rel="prefetch" href="/Blog/assets/js/4.fb4fd8cb.js"><link rel="prefetch" href="/Blog/assets/js/40.a8f08a39.js"><link rel="prefetch" href="/Blog/assets/js/41.9bf43c30.js"><link rel="prefetch" href="/Blog/assets/js/42.a0c00c32.js"><link rel="prefetch" href="/Blog/assets/js/43.a0c5e0dc.js"><link rel="prefetch" href="/Blog/assets/js/44.5c5a7720.js"><link rel="prefetch" href="/Blog/assets/js/45.5cf2d723.js"><link rel="prefetch" href="/Blog/assets/js/46.9bf39433.js"><link rel="prefetch" href="/Blog/assets/js/47.3160d2d2.js"><link rel="prefetch" href="/Blog/assets/js/48.9fa80ad1.js"><link rel="prefetch" href="/Blog/assets/js/49.936e67cd.js"><link rel="prefetch" href="/Blog/assets/js/5.936fe44f.js"><link rel="prefetch" href="/Blog/assets/js/50.4697b95b.js"><link rel="prefetch" href="/Blog/assets/js/51.ac66a436.js"><link rel="prefetch" href="/Blog/assets/js/52.d4c332c8.js"><link rel="prefetch" href="/Blog/assets/js/53.c9523c0d.js"><link rel="prefetch" href="/Blog/assets/js/54.1eaf6097.js"><link rel="prefetch" href="/Blog/assets/js/55.0890672b.js"><link rel="prefetch" href="/Blog/assets/js/56.05a29d48.js"><link rel="prefetch" href="/Blog/assets/js/57.33d78bd1.js"><link rel="prefetch" href="/Blog/assets/js/58.b459354c.js"><link rel="prefetch" href="/Blog/assets/js/59.9c73fddf.js"><link rel="prefetch" href="/Blog/assets/js/6.78a547ee.js"><link rel="prefetch" href="/Blog/assets/js/61.14b5149d.js"><link rel="prefetch" href="/Blog/assets/js/62.9d7660e9.js"><link rel="prefetch" href="/Blog/assets/js/63.5d1e8d84.js"><link rel="prefetch" href="/Blog/assets/js/64.0a735136.js"><link rel="prefetch" href="/Blog/assets/js/65.d8b81a24.js"><link rel="prefetch" href="/Blog/assets/js/66.cae6262d.js"><link rel="prefetch" href="/Blog/assets/js/67.2e380607.js"><link rel="prefetch" href="/Blog/assets/js/68.60ad3ba4.js"><link rel="prefetch" href="/Blog/assets/js/69.02f55698.js"><link rel="prefetch" href="/Blog/assets/js/7.21716967.js"><link rel="prefetch" href="/Blog/assets/js/70.194f0590.js"><link rel="prefetch" href="/Blog/assets/js/71.ee7d9bfb.js"><link rel="prefetch" href="/Blog/assets/js/72.43af9dd4.js"><link rel="prefetch" href="/Blog/assets/js/73.973c695f.js"><link rel="prefetch" href="/Blog/assets/js/74.c2b70d6c.js"><link rel="prefetch" href="/Blog/assets/js/75.a359e09d.js"><link rel="prefetch" href="/Blog/assets/js/76.c39b2efa.js"><link rel="prefetch" href="/Blog/assets/js/77.a5f949cf.js"><link rel="prefetch" href="/Blog/assets/js/78.6bd57e21.js"><link rel="prefetch" href="/Blog/assets/js/79.7cd9d8f4.js"><link rel="prefetch" href="/Blog/assets/js/80.a67aaeeb.js"><link rel="prefetch" href="/Blog/assets/js/81.828cb38e.js"><link rel="prefetch" href="/Blog/assets/js/82.37554809.js"><link rel="prefetch" href="/Blog/assets/js/83.0064504d.js"><link rel="prefetch" href="/Blog/assets/js/84.dd48bb56.js"><link rel="prefetch" href="/Blog/assets/js/85.f2cafb4b.js"><link rel="prefetch" href="/Blog/assets/js/86.f670b220.js"><link rel="prefetch" href="/Blog/assets/js/87.46382599.js"><link rel="prefetch" href="/Blog/assets/js/88.c3f9ed96.js"><link rel="prefetch" href="/Blog/assets/js/89.f2e32b85.js"><link rel="prefetch" href="/Blog/assets/js/90.3b1cd03d.js"><link rel="prefetch" href="/Blog/assets/js/91.6a37ce11.js"><link rel="prefetch" href="/Blog/assets/js/92.6ba751dd.js"><link rel="prefetch" href="/Blog/assets/js/93.036c2667.js"><link rel="prefetch" href="/Blog/assets/js/94.5e1af68e.js"><link rel="prefetch" href="/Blog/assets/js/95.7faaf930.js"><link rel="prefetch" href="/Blog/assets/js/96.d8b18168.js"><link rel="prefetch" href="/Blog/assets/js/97.4e7ad107.js"><link rel="prefetch" href="/Blog/assets/js/98.b741819f.js"><link rel="prefetch" href="/Blog/assets/js/99.c01eca41.js"><link rel="prefetch" href="/Blog/assets/js/vendors~docsearch.3b28fe31.js">
+    <link rel="stylesheet" href="/Blog/assets/css/0.styles.9501ef99.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Blog/" class="home-link router-link-active"><img src="/Blog/assets/img/good.png" alt="Personal Blog --from Outis Li" class="logo"> <span class="site-name can-hide">Personal Blog --from Outis Li</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Research" class="dropdown-title"><span class="title">Research</span> <span class="arrow down"></span></button> <button type="button" aria-label="Research" class="mobile-dropdown-title"><span class="title">Research</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/Research/Research/2023-Geant4.html" class="nav-link">
+  Geant4
+</a></li><li class="dropdown-item"><h4>
+          CS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Research/Research/2023.12.12-Docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="LeetCode" class="dropdown-title"><span class="title">LeetCode</span> <span class="arrow down"></span></button> <button type="button" aria-label="LeetCode" class="mobile-dropdown-title"><span class="title">LeetCode</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Basic
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.02.22-BFS.html" class="nav-link">
+  BFS
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.05-二叉树.html" class="nav-link">
+  二叉树
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.11-二分搜索.html" class="nav-link">
+  二分搜索
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.18-滑动窗口.html" class="nav-link">
+  滑动窗口
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Chip" class="dropdown-title"><span class="title">Chip</span> <span class="arrow down"></span></button> <button type="button" aria-label="Chip" class="mobile-dropdown-title"><span class="title">Chip</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          一生一芯
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  预学习
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  B阶段
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  A阶段
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Chisel
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  Outline
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.html" class="nav-link">
+  Bootcamp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Verilog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  Outline
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  Basic
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><span class="title">Others</span> <span class="arrow down"></span></button> <button type="button" aria-label="Others" class="mobile-dropdown-title"><span class="title">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Blog/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Research" class="dropdown-title"><span class="title">Research</span> <span class="arrow down"></span></button> <button type="button" aria-label="Research" class="mobile-dropdown-title"><span class="title">Research</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Blog/Research/Research/2023-Geant4.html" class="nav-link">
+  Geant4
+</a></li><li class="dropdown-item"><h4>
+          CS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Research/Research/2023.12.12-Docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="LeetCode" class="dropdown-title"><span class="title">LeetCode</span> <span class="arrow down"></span></button> <button type="button" aria-label="LeetCode" class="mobile-dropdown-title"><span class="title">LeetCode</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Basic
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.02.22-BFS.html" class="nav-link">
+  BFS
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.05-二叉树.html" class="nav-link">
+  二叉树
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.11-二分搜索.html" class="nav-link">
+  二分搜索
+</a></li><li class="dropdown-subitem"><a href="/Blog/LeetCode/Leetcode/2024.03.18-滑动窗口.html" class="nav-link">
+  滑动窗口
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Chip" class="dropdown-title"><span class="title">Chip</span> <span class="arrow down"></span></button> <button type="button" aria-label="Chip" class="mobile-dropdown-title"><span class="title">Chip</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          一生一芯
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  预学习
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  B阶段
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  A阶段
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Chisel
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  Outline
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.html" class="nav-link">
+  Bootcamp
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Verilog
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  Outline
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  Basic
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Others" class="dropdown-title"><span class="title">Others</span> <span class="arrow down"></span></button> <button type="button" aria-label="Others" class="mobile-dropdown-title"><span class="title">Others</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/1. 一生一芯计划.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/2. 2024.02.21-Chisel.html" class="nav-link">
+  tbc
+</a></li></ul></li><li class="dropdown-item"><h4>
+          tbc
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li><li class="dropdown-subitem"><a href="/Blog/Chip/Chip/3. 2023.11.07-Verilog语法.html" class="nav-link">
+  tbc
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>2024 02 21 Chisel Boot</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.21-1 Introduction to Scala.html" class="sidebar-link">2024.02.21-1. Introduction to Scala</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html" class="active sidebar-link">2024.02.23-2.1 First Chisel Module</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#setup" class="sidebar-link">Setup</a></li><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#example-module" class="sidebar-link">Example Module</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#generate-verilog" class="sidebar-link">Generate Verilog</a></li><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#generate-firrtl" class="sidebar-link">Generate Firrtl</a></li></ul></li><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#example-tester" class="sidebar-link">Example Tester</a></li><li class="sidebar-sub-header"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.23-2.1 First Chisel Module.html#appendix-a-note-on-printf-debugging" class="sidebar-link">Appendix: A Note on &quot;printf&quot; Debugging</a></li></ul></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.24-2.2 Combinational Logic.html" class="sidebar-link">2024.02.24-2.2 Combinational Logic</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.25-2.3 Control Flow.html" class="sidebar-link">2024.02.25-2.3 Control Flow</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.26-2.4 Sequential Logic.html" class="sidebar-link">2024.02.26-2.4 Sequential Logic</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.28-2.5 FIR Filter.html" class="sidebar-link">2024.02.28-2.5 FIR Filter</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.29-2.6 More on ChiselTest.html" class="sidebar-link">2024.02.29-2.6 More on ChiselTest</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.01-3.1 Generators Parameters.html" class="sidebar-link">2024.03.01-3.1 Generators: Parameters</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.03-3.2 Generators Collections.html" class="sidebar-link">2024.03.03-3.2 Generators: Collections</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.04-3.3 Interlude Chisel Standard Library.html" class="sidebar-link">2024.03.04-3.3 Interlude: Chisel Standard Library</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.05-3.4 Higher-Order Functions.html" class="sidebar-link">2024.03.05-3.4 Higher-Order Functions</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.07-3.5 Functional Programming.html" class="sidebar-link">2024.03.07-3.5 Functional Programming</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.09-3.6 Object Oriented Programming.html" class="sidebar-link">2024.03.09-3.6 Object Oriented Programming</a></li><li><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.03.12-3.7 Generators Types.html" class="sidebar-link">2024.03.12-3.7 Generators: Types</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_2024-02-23-2-1-first-chisel-module"><a href="#_2024-02-23-2-1-first-chisel-module" class="header-anchor">#</a> 2024.02.23-2.1 First Chisel Module</h1> <h2 id="setup"><a href="#setup" class="header-anchor">#</a> Setup</h2> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">val</span> path <span class="token operator">=</span> System<span class="token punctuation">.</span>getProperty<span class="token punctuation">(</span><span class="token string">&quot;user.dir&quot;</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;/source/load-ivy.sc&quot;</span>
+interp<span class="token punctuation">.</span>load<span class="token punctuation">.</span>module<span class="token punctuation">(</span>ammonite<span class="token punctuation">.</span>ops<span class="token punctuation">.</span>Path<span class="token punctuation">(</span>java<span class="token punctuation">.</span>nio<span class="token punctuation">.</span>file<span class="token punctuation">.</span>FileSystems<span class="token punctuation">.</span>getDefault<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>getPath<span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">import</span> <span class="token namespace">chisel3<span class="token punctuation">.</span></span>_
+<span class="token keyword">import</span> <span class="token namespace">chisel3<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span>_
+<span class="token keyword">import</span> <span class="token namespace">chisel3<span class="token punctuation">.</span>tester<span class="token punctuation">.</span></span>_
+<span class="token keyword">import</span> <span class="token namespace">chisel3<span class="token punctuation">.</span>tester<span class="token punctuation">.</span></span>RawTester<span class="token punctuation">.</span>test
+<span class="token keyword">import</span> <span class="token namespace">dotvisualizer<span class="token punctuation">.</span></span>_
+</code></pre></div><p>这两句代码在使用 Chisel（一种硬件描述语言）时，涉及到 Ammonite 脚本的动态加载。第一句定义了一个<code>path</code>变量，它通过获取系统属性<code>&quot;user.dir&quot;</code>（当前用户目录）并附加上<code>&quot;/source/load-ivy.sc&quot;</code>路径，用于指定一个 Scala 脚本文件的位置。第二句使用 Ammonite 的<code>interp.load.module</code>方法动态加载这个指定路径下的 Scala 脚本文件。</p> <p>动态加载脚本在使用 Chisel 编写代码时可以有多个用途，如：</p> <ol><li>引入依赖：动态加载<code>load-ivy.sc</code>脚本可以用来引入或更新 Ammonite 会话中的 Ivy 依赖，确保代码运行时有必要的库支持。</li> <li>执行初始化代码：可以在脚本中执行必要的初始化操作，为后续的 Chisel 硬件设计代码执行设置适当的环境或参数。</li> <li>灵活性和模块化：通过动态加载脚本，可以根据需要灵活地加载和卸载模块，使代码结构更加模块化，便于管理和维护。</li></ol> <ul><li><code>import chisel3._</code>：基础的 Chisel 功能，包括定义硬件组件的基本构建块。</li> <li><code>import chisel3.util._</code>：提供了一些实用工具和额外的硬件构建块，比如计数器、移位寄存器等。</li> <li><code>import chisel3.tester._</code>：提供了测试 Chisel 硬件设计的工具和框架。</li> <li><code>import chisel3.tester.RawTester.test</code>：是<code>chisel3.tester</code>中的一个具体的测试功能，用于执行硬件测试。</li></ul> <h2 id="example-module"><a href="#example-module" class="header-anchor">#</a> Example Module</h2> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">class</span> Passthrough <span class="token keyword">extends</span> Module <span class="token punctuation">{</span>
+  <span class="token keyword">val</span> io <span class="token operator">=</span> IO<span class="token punctuation">(</span><span class="token keyword">new</span> Bundle <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> in <span class="token operator">=</span> Input<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span><span class="token number">4.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">val</span> out <span class="token operator">=</span> Output<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span><span class="token number">4.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  io<span class="token punctuation">.</span>out <span class="token operator">:</span><span class="token operator">=</span> io<span class="token punctuation">.</span>in
+<span class="token punctuation">}</span>
+
+<span class="token comment">// with parameter</span>
+<span class="token keyword">class</span> PassthroughGenerator<span class="token punctuation">(</span>width<span class="token operator">:</span> <span class="token builtin">Int</span><span class="token punctuation">)</span> <span class="token keyword">extends</span> Module <span class="token punctuation">{</span>
+  <span class="token keyword">val</span> io <span class="token operator">=</span> IO<span class="token punctuation">(</span><span class="token keyword">new</span> Bundle <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> in <span class="token operator">=</span> Input<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span>width<span class="token punctuation">.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">val</span> out <span class="token operator">=</span> Output<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span>width<span class="token punctuation">.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  io<span class="token punctuation">.</span>out <span class="token operator">:</span><span class="token operator">=</span> io<span class="token punctuation">.</span>in
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">class</span> Passthrough <span class="token keyword">extends</span> Module <span class="token punctuation">{</span>
+</code></pre></div><p>我们声明一个叫做<code>Passthrough</code>的新模块。<code>Module</code>是 Chisel 内置的一个类，所有硬件模块都必须扩展它</p> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">val</span> io <span class="token operator">=</span> IO<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+</code></pre></div><p>我们在一个特殊的<code>io</code>变量中声明所有的输入和输出端口。它必须被命名为<code>io</code>，并且是一个<code>IO</code>对象或实例，这需要形如<code>IO(_instantiated_bundle_)</code>的东西</p> <p>在 Chisel 中，<code>io</code>、<code>in</code>和<code>out</code>被声明为<code>val</code>（不可变引用）而不是<code>var</code>（可变引用），因为它们代表硬件模块的接口。在硬件设计中，接口的结构（例如信号的数量、类型和方向）在编译时确定且不会改变。虽然信号的值在模拟过程中会变化，但信号的定义（即接口）是固定的。使用<code>val</code>声明这些接口强调了它们是不变的结构，而信号值的变化则通过信号之间的连接和赋值来体现，这与软件编程中变量的概念有所不同。</p> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">new</span> Bundle <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> in <span class="token operator">=</span> Input<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+    <span class="token keyword">val</span> out <span class="token operator">=</span> Output<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>我们声明了一个新的硬件结构类型（Bundle），它包含了一些命名的信号<code>in</code>和<code>out</code>，分别具有输入和输出的方向。</p> <p>在 Chisel 中，<code>Bundle</code>是一种用于定义一组相关信号的类，类似于 Verilog 中的<code>module</code>内部信号或 VHDL 中的<code>record</code>。它允许开发者将多个信号组合成一个单一的复合类型，这样可以更方便地管理和传递数据结构。每个<code>Bundle</code>内的信号可以有不同的类型和方向（如输入<code>Input</code>、输出<code>Output</code>），使其成为定义模块接口和内部数据结构的强大工具。</p> <div class="language-scala extra-class"><pre class="language-scala"><code>UInt<span class="token punctuation">(</span><span class="token number">4.</span>W<span class="token punctuation">)</span>
+</code></pre></div><p>我们声明了信号的硬件类型。在这个案例中，它是宽度为 4 的无符号整数。</p> <div class="language-scala extra-class"><pre class="language-scala"><code>io<span class="token punctuation">.</span>out <span class="token operator">:</span><span class="token operator">=</span> io<span class="token punctuation">.</span>in
+</code></pre></div><p>我们将我们的输入端口连接到我们的输出端口，这样<code>io.in</code><em>驱动</em><code>io.out</code>。注意，<code>:=</code>操作符是一个<em>Chisel</em>操作符，它表示右手边的信号驱动左手边的信号。它是一个有方向的操作符。</p> <p>硬件构建语言（HCLs）的一个整洁之处在于我们可以使用底层的编程语言作为脚本语言。例如，在声明我们的 Chisel 模块之后，我们接着使用 Scala 调用 Chisel 编译器将 Chisel 的<code>Passthrough</code>翻译成 Verilog 的<code>Passthrough</code>。这个过程被称为<em>精炼</em>。</p> <h3 id="generate-verilog"><a href="#generate-verilog" class="header-anchor">#</a> Generate Verilog</h3> <div class="language-scala extra-class"><pre class="language-scala"><code>println<span class="token punctuation">(</span>getVerilog<span class="token punctuation">(</span><span class="token keyword">new</span> Passthrough<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-verilog extra-class"><pre class="language-verilog"><code><span class="token keyword">module</span> <span class="token function">Passthrough</span><span class="token punctuation">(</span>
+  <span class="token keyword">input</span>        clock<span class="token punctuation">,</span>
+  <span class="token keyword">input</span>        reset<span class="token punctuation">,</span>
+  <span class="token keyword">input</span>  <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> io_in<span class="token punctuation">,</span>
+  <span class="token keyword">output</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">]</span> io_out
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">assign</span> io_out <span class="token operator">=</span> io_in<span class="token punctuation">;</span> <span class="token comment">// @[cmd2.sc 6:10]</span>
+<span class="token keyword">endmodule</span>
+</code></pre></div><h3 id="generate-firrtl"><a href="#generate-firrtl" class="header-anchor">#</a> Generate Firrtl</h3> <div class="language-scala extra-class"><pre class="language-scala"><code>println<span class="token punctuation">(</span>getFirrtl<span class="token punctuation">(</span><span class="token keyword">new</span> Passthrough<span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-verilog extra-class"><pre class="language-verilog"><code>circuit Passthrough <span class="token punctuation">:</span>
+  <span class="token keyword">module</span> Passthrough <span class="token punctuation">:</span>
+    <span class="token keyword">input</span> clock <span class="token punctuation">:</span> Clock
+    <span class="token keyword">input</span> reset <span class="token punctuation">:</span> UInt<span class="token operator">&lt;</span><span class="token number">1</span><span class="token operator">&gt;</span>
+    <span class="token keyword">output</span> io <span class="token punctuation">:</span> <span class="token operator">{</span> flip in <span class="token punctuation">:</span> UInt<span class="token operator">&lt;</span><span class="token number">4</span><span class="token operator">&gt;</span><span class="token punctuation">,</span> out <span class="token punctuation">:</span> UInt<span class="token operator">&lt;</span><span class="token number">4</span><span class="token operator">&gt;}</span>
+
+    io<span class="token punctuation">.</span>out <span class="token operator">&lt;=</span> io<span class="token punctuation">.</span>in @<span class="token punctuation">[</span>cmd2<span class="token punctuation">.</span>sc <span class="token number">6</span><span class="token punctuation">:</span><span class="token number">10</span><span class="token punctuation">]</span>
+</code></pre></div><h2 id="example-tester"><a href="#example-tester" class="header-anchor">#</a> Example Tester</h2> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token comment">// Scala Code: `test` runs the unit test.</span>
+<span class="token comment">// test takes a user Module and has a code block that applies pokes and expects to the</span>
+<span class="token comment">// circuit under test (c)</span>
+test<span class="token punctuation">(</span><span class="token keyword">new</span> Passthrough<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> c <span class="token keyword">=&gt;</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">0.</span>U<span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 0</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">0.</span>U<span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 0</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">1.</span>U<span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 1</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">1.</span>U<span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 1</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">2.</span>U<span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 2</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">2.</span>U<span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 2</span>
+<span class="token punctuation">}</span>
+println<span class="token punctuation">(</span><span class="token string">&quot;SUCCESS!!&quot;</span><span class="token punctuation">)</span> <span class="token comment">// Scala Code: if we get here, our tests passed!</span>
+
+<span class="token comment">// Test with width 10</span>
+test<span class="token punctuation">(</span><span class="token keyword">new</span> PassthroughGenerator<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> c <span class="token keyword">=&gt;</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">0.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 0</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">0.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 0</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">1.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 1</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">1.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 1</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">2.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>     <span class="token comment">// Set our input to value 2</span>
+		c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">2.</span>U<span class="token punctuation">(</span><span class="token number">10.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment">// Assert that the output correctly has 2</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>c.io.in.poke(0.U)</code>：设置模块的输入<code>in</code>为 0。</li> <li><code>c.io.out.expect(0.U)</code>：检查模块的输出<code>out</code>是否为 0，确保电路按预期工作。</li> <li>接下来，代码以相同的方式测试输入值 1 和 2，分别使用<code>poke</code>方法设置输入值，并用<code>expect</code>方法验证输出值。</li></ul> <p>在 Scala 中，可以直接在函数调用后跟一个代码块，这是因为 Scala 支持高阶函数，即可以接受函数作为参数的函数。在这个例子中，<code>test</code>函数接受两个参数：一个是<code>Passthrough</code>模块的实例，另一个是一个匿名函数（或称为代码块），这个匿名函数以<code>c</code>作为参数进行操作。这种语法使得代码更加简洁易读，允许直接在调用函数时定义行为逻辑，非常适合进行单元测试等场景。当一个函数的最后一个参数是函数类型时，可以使用特殊的语法糖允许将这个函数参数写在方法调用的外部。这种语法不仅使得代码更加清晰，而且在使用匿名函数或代码块作为参数时尤其有用，因为它允许代码块在视觉上更为突出，从而提高了代码的可读性。这就是为什么<code>test(new Passthrough())</code>后面可以直接跟一个代码块的原因。</p> <p><code>c =&gt;</code>是一个函数字面量（匿名函数）的语法，用于定义一个函数。这里，<code>c</code>是函数的参数，<code>=&gt;</code>后面跟着的是函数体。在这个上下文中，<code>c</code>代表传递给测试代码块的模块实例（如<code>Passthrough</code>模块实例），然后在代码块内部，你可以使用<code>c</code>来访问和操作这个实例的输入和输出端口。在 Scala 的函数字面量中，参数类型通常是通过上下文推断出来的，不需要显式声明。在<code>test(new Passthrough()) { c =&gt; ... }</code>这段代码中，<code>c</code>是由<code>test</code>函数根据其参数类型推断出的<code>Passthrough</code>模块实例。也就是说，当你写<code>c =&gt;</code>时，<code>c</code>的类型（在这个例子中是<code>Passthrough</code>模块实例）是由<code>test</code>函数的定义确定的，根据这个函数期望的参数类型。这就是为什么可以直接使用<code>c</code>来访问<code>Passthrough</code>实例的成员，如<code>c.io.in</code>和<code>c.io.out</code>，而不需要额外的类型声明。</p> <p>Note that the <code>poke</code> and <code>expect</code> use chisel hardware literal notation. Both operations expect literals of the correct type.
+If <code>poke</code>ing a <code>UInt()</code> you must supply a <code>UInt</code> literal (example: <code>c.io.in.poke(10.U)</code>), likewise if the input is a <code>Bool()</code> the <code>poke</code> would expect either <code>true.B</code> or <code>false.B</code>.</p> <h2 id="appendix-a-note-on-printf-debugging"><a href="#appendix-a-note-on-printf-debugging" class="header-anchor">#</a> Appendix: A Note on &quot;printf&quot; Debugging</h2> <div class="language-scala extra-class"><pre class="language-scala"><code><span class="token keyword">class</span> PrintingModule <span class="token keyword">extends</span> Module <span class="token punctuation">{</span>
+    <span class="token keyword">val</span> io <span class="token operator">=</span> IO<span class="token punctuation">(</span><span class="token keyword">new</span> Bundle <span class="token punctuation">{</span>
+        <span class="token keyword">val</span> in <span class="token operator">=</span> Input<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span><span class="token number">4.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">val</span> out <span class="token operator">=</span> Output<span class="token punctuation">(</span>UInt<span class="token punctuation">(</span><span class="token number">4.</span>W<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    io<span class="token punctuation">.</span>out <span class="token operator">:</span><span class="token operator">=</span> io<span class="token punctuation">.</span>in
+
+    printf<span class="token punctuation">(</span><span class="token string">&quot;Print during simulation: Input is %d\n&quot;</span><span class="token punctuation">,</span> io<span class="token punctuation">.</span>in<span class="token punctuation">)</span>
+    <span class="token comment">// chisel printf has its own string interpolator too</span>
+    printf<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token id function">p</span><span class="token string">&quot;Print during simulation: IO is </span><span class="token interpolation"><span class="token punctuation">$</span><span class="token expression">io</span></span><span class="token string">\n&quot;</span></span><span class="token punctuation">)</span>
+
+    println<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token id function">s</span><span class="token string">&quot;Print during generation: Input is </span><span class="token interpolation"><span class="token punctuation">${</span><span class="token expression">io<span class="token punctuation">.</span>in</span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+<span class="token comment">// s用于一般的Scala字符串插值，而p专门为Chisel设计，用于更方便地在仿真中打印硬件信号和对象</span>
+<span class="token punctuation">}</span>
+
+test<span class="token punctuation">(</span><span class="token keyword">new</span> PrintingModule <span class="token punctuation">)</span> <span class="token punctuation">{</span> c <span class="token keyword">=&gt;</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>poke<span class="token punctuation">(</span><span class="token number">3.</span>U<span class="token punctuation">)</span>
+    c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>out<span class="token punctuation">.</span>expect<span class="token punctuation">(</span><span class="token number">3.</span>U<span class="token punctuation">)</span>
+    c<span class="token punctuation">.</span>clock<span class="token punctuation">.</span>step<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span> <span class="token comment">// circuit will print</span>
+
+    println<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token id function">s</span><span class="token string">&quot;Print during testing: Input is </span><span class="token interpolation"><span class="token punctuation">${</span><span class="token expression">c<span class="token punctuation">.</span>io<span class="token punctuation">.</span>in<span class="token punctuation">.</span>peek<span class="token punctuation">(</span><span class="token punctuation">)</span></span><span class="token punctuation">}</span></span><span class="token string">&quot;</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-scala extra-class"><pre class="language-scala"><code>Elaborating design<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+Print during generation<span class="token operator">:</span> Input is UInt<span class="token generics"><span class="token punctuation">&lt;</span>4<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span>IO in unelaborated PrintingModule<span class="token punctuation">)</span>
+Done elaborating<span class="token punctuation">.</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">3</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">)</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">3</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">)</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">3</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">)</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">3</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">)</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">3</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">3</span><span class="token punctuation">)</span>
+Print during testing<span class="token operator">:</span> Input is UInt<span class="token generics"><span class="token punctuation">&lt;</span>4<span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+Print during simulation<span class="token operator">:</span> Input is   <span class="token number">0</span>
+Print during simulation<span class="token operator">:</span> IO is AnonymousBundle<span class="token punctuation">(</span>in <span class="token operator">-&gt;</span>   <span class="token number">0</span><span class="token punctuation">,</span> out <span class="token operator">-&gt;</span>   <span class="token number">0</span><span class="token punctuation">)</span>
+test PrintingModule Success<span class="token operator">:</span> <span class="token number">0</span> tests passed in <span class="token number">7</span> cycles in <span class="token number">0.003471</span> seconds <span class="token number">2016.88</span> Hz
+</code></pre></div><p>这段代码定义了一个<code>PrintingModule</code>类，它扩展了 Chisel 的<code>Module</code>，用于演示在不同阶段打印信息：</p> <ol><li>模块定义中的<code>printf</code>语句：这些在仿真时每个时钟周期都会打印。<code>printf(&quot;Print during simulation: Input is %d\n&quot;, io.in)</code>会打印输入信号的值，而<code>printf(p&quot;Print during simulation: IO is $io\n&quot;)</code>会打印<code>io</code>对象的信息。这些仅在仿真（运行时）生效。</li> <li>模块定义中的<code>println</code>语句：这句话在模块的<em>生成</em>阶段打印，即代码编译时，打印到终端或控制台。它不会在仿真时打印，因为它是 Scala 的打印语句，不是 Chisel 的。</li> <li>测试块中的<code>println</code>语句：这在 Scala 测试环境中执行，用于打印测试时的信息。如<code>println(s&quot;Print during testing: Input is ${c.io.in.peek()}&quot;)</code>将在测试过程中打印输入信号的当前值。</li></ol> <ul><li><code>c.io.in.poke(3.U)</code>设置输入为 3。</li> <li><code>c.io.out.expect(3.U)</code>期望输出为 3，这个测试会通过，因为输出应该与输入相同。</li> <li><code>c.clock.step(5)</code>推进仿真时钟 5 个周期，这期间<code>printf</code>语句会打印信息。</li></ul> <ol><li>最后的<code>Print during simulation: Input is 0</code> 是因为被重置回到默认状态</li> <li>7 周期则是因为测试中执行了<code>c.clock.step(5)</code>，推进了 5 个时钟周期，加上测试开始前后的各 1 个周期</li></ol> <p>综上，<code>println</code>用于代码生成阶段和测试代码中，打印到 Scala 的执行环境；<code>printf</code>用于仿真阶段，打印到仿真的输出中。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.21-1 Introduction to Scala.html" class="prev">
+        2024.02.21-1. Introduction to Scala
+      </a></span> <span class="next"><a href="/Blog/Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot/2024.02.24-2.2 Combinational Logic.html">
+        2024.02.24-2.2 Combinational Logic
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Blog/assets/js/app.fffc62c2.js" defer></script><script src="/Blog/assets/js/2.d9b38520.js" defer></script><script src="/Blog/assets/js/1.a4e52cf6.js" defer></script><script src="/Blog/assets/js/60.7299e19c.js" defer></script>
+  </body>
+</html>
