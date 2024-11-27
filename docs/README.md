@@ -4,7 +4,7 @@ home: true
 heroText: Outis Li
 tagline: Personal Blog
 actionText: 预览 →
-actionLink: /Chip/Chip/2024.02.21-Chisel/2024.02.21-ChiselBoot.md
+actionLink: /Chip/Chip/1.%20一生一芯计划.md
 features:
 - title: Research
   details: 用于记录科研中一些注意事项，小工具等等杂乱的东西
